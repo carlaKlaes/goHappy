@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  	<!--Page Title-->
+    <title>Contact Us</title>
+
+    <!--Custom Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/style_contactus.css">
+
+    <!--External css-->
+    <link rel="stylesheet" type="text/css" href="css/external_css/normalize.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript">
+         function toggleMenu(){
+           document.getElementById("topnav").style.display = "block";
+         }
+      </script>
+  </head>
+
+  <body class="parallax">
+    <div id="container">
+
+      <!--Header Section | Navigation Bar-->
+      <nav>
+        <div id="logo">
+          <img src="images/logo.png" width="100px" height="40px" />
+        </div>
+        <button onClick="toggleMenu()">
+          <img src="images/menu.png" height="50px" width="50px" />
+        </button>
+        <div id="navigation">
+            <ul id="topnav">
+               <li><a href="DashBord.html">Home</a></li>
+               <li><a href="Services.html">Services</a></li>
+               <li><a href="Gallery.html">Gallery</a></li>
+               <li><a href="DomesticTrips.html">Domestic Trips</a></li>
+               <li><a href="DomesticTrips.html">International Trips</a></li>
+               <li><a href="Testimonials.html">Testimonials</a></li>
+               <li><a href="SignIn.html">Log-In</a></li>
+               <li><a href="JoinUs.html">Sign-Up</a></li>
+               <li><a href="Aboutus_layout.html">About Us</a></li>
+               <li><a href="Contactus_layout.html">Contact Us</a></li>
+            </ul>
+        </div>
+      </nav> 
+
+      <!--Main Section | Send Message, Get in Touch-->
+      <main>
+        <div class="details">
+        	<h4>GET IN TOUCH</h4>
+        	<div class="cover_details_div">
+        		<img alt="location icon" class="size_contact_icon" src="images/contact_us/location.png">
+        		<span class="text_details">GoHappy Corp. Pvt. Ltd., 205 Dixie Road, Wellingtom, M9W 5L7</span>
+        	</div>
+        	<div class="cover_details_div">
+        		<img alt="message icon" class="size_contact_icon" src="images/contact_us/message.jpg">
+        		<span class="text_details">info@gohappy.com</span>
+        	</div>
+        	<div class="cover_details_div">
+        		<img alt="call icon" class="size_contact_icon" src="images/contact_us/call.jpg">
+        		<span class="text_details">+1(437)9712401</span>
+        	</div>
+        	<div class="cover_details_div">
+        		<img alt="whatsapp icon" class="size_contact_icon" src="images/contact_us/whatsapp.png">
+        	<span class="text_details">+1(437)9712401</span>
+        	</div>      	
+        </div>
+        <div class="form1">
+        	<h4>SEND US A MESSAGE</h4>
+        	<form action="form.html" id="signup_form" name="signup_form" method="get">
+				<input class="common_bottom" type="text" name="name1" id="name" placeholder="Name" /><br>
+				<input class="common_bottom" type="text" name="email" id="email" placeholder="Email" /><br>
+				<input class="common_bottom" type="text" name="text" id="text" placeholder="Telephone" /><br>
+				<textarea class="common_bottom" rows="4" cols="70" placeholder="Message"></textarea>
+				<input class="common_bottom" type="text" name="place" id="place" placeholder="Place" /><br>
+				<label class="date_label">Select Check In Date: </label><input class="date_box" type="date" name="checkin" /><br>
+				<label class="date_label">Select Check Out Date: </label><input class="date_box" type="date" name="checkout" /><br>
+				<input type="number" class="common_bottom" name="Adults" min="0" placeholder="No. of Adults"><br>
+				<input type="number" class="common_bottom" name="Child" min="0" placeholder="No. of Child"><br>
+				<input type="number" class="common_bottom" name="Child" min="0" placeholder="No. of Rooms"><br>
+				<input class="submit_button" type="submit" value="Submit" name="submit" />
+		</form>
+        </div>
+        <div class="google_map">
+        	<h4>FIND US HERE</h4>
+        	<img alt="Office location on google maps" class="map" src="images/contact_us/map_loc.png">
+        </div>
+      </main>
+
+      <!--Footer Section-->
+      <footer>
+      	<div class="foot">
+	        <table  class="foot_t1">
+	          <caption class="foot_txt">BUSINESS HOURS :</caption>
+							<tr>
+								<td>Monday-Friday</td>
+								<td>:</td>
+								<td>10AM to 7PM</td>
+							</tr>
+							<tr>
+								<td>Saturday</td>
+								<td>:</td>
+								<td>10AM to 5PM</td>
+							</tr>
+							<tr>
+								<td>Sunday</td>
+								<td>:</td>
+								<td>Closed</td>
+							</tr>
+			</table>
+			 <table  class="foot_t2">
+	          <caption class="foot_txt">GET CONNECTED WITH US :</caption>
+							<tr>
+								<td><img src = "images/social_icons/whatsapp.png" alt="whatsapp icon" height="40" width="40">
+									<img src = "images/social_icons/facebook.png" alt="facebook icon" height="40" width="40"></td>
+							</tr>
+			</table>
+	        <table  class="foot_t3">
+	          <caption class="foot_txt">POPULAR ITEMS :</caption>
+	          <tr>
+	          	<td><img src = "images/popular_items/1.jpg" alt="popular visiting place...." height="50" width="70"></td>
+	          	<td><img src = "images/popular_items/2.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          	<td><img src = "images/popular_items/3.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          	<td><img src = "images/popular_items/4.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          </tr>
+	          <tr>
+	          	<td><img src = "images/popular_items/5.jpg" alt="popular visiting place...." height="50" width="70"></td>
+	          	<td><img src = "images/popular_items/6.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          	<td><img src = "images/popular_items/7.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          	<td><img src = "images/popular_items/8.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          </tr>
+			</table>
+			<table  class="foot_t3_1">
+	          <caption class="foot_txt_1">POPULAR ITEMS :</caption>
+	          <tr>
+	          	<td><img src = "images/popular_items/1.jpg" alt="popular visiting place...." height="50" width="70"></td>
+	          	<td><img src = "images/popular_items/2.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          </tr>
+	          <tr>
+	          	<td><img src = "images/popular_items/3.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          	<td><img src = "images/popular_items/4.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          </tr>
+	          <tr>
+	          	<td><img src = "images/popular_items/5.jpg" alt="popular visiting place...." height="50" width="70"></td>
+	          	<td><img src = "images/popular_items/6.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          </tr>
+	          <tr>
+	          	<td><img src = "images/popular_items/7.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          	<td><img src = "images/popular_items/8.jpg" alt="popular visiting place...." height="50" width="60"></td>
+	          </tr>
+			</table>
+		</div>
+        <div class="copyright_text">
+            Copyright &copy; 2018 GoHappy Overseas<br>
+            <a href="mailto:info@gohappyoverseas.com"><b>info@gohappyoverseas.com</b></a>
+        </div>         
+      </footer>
+    </div>
+  </body>
+</html>

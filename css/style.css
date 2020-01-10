@@ -1,0 +1,413 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+	font-family: Arial, sans-serif;
+	position: relative;
+}
+nav {
+	padding-top: 25px;
+	width: 100%;
+	height: 75px;
+	background-color: rgba(138, 196, 139, .7);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+#logo {
+	width: 10%;
+	float: left;
+}
+
+#navigation {
+	width: 90%;
+	float: right;
+}
+
+#navigation ul li:hover {
+	background-color: black;
+}
+
+ul#topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul#topnav li {
+	float: none;
+}
+
+ul#topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+ul#topnav li.right {
+	float: none;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	float: right;
+	display: block;
+}
+
+#navigation ul {
+	display: none;
+}
+
+.service_content {
+	text-align: center;
+}
+
+.service_content img {
+	padding: 10%;
+	border-radius: 50%;	
+	cursor: pointer;
+	  transition: box-shadow 0.2s linear;
+	  margin: 0.5em;
+}
+.service_content img:hover { 
+	box-shadow: 0px 0px 0px 10px rgb(138, 196, 139);
+}
+
+#main_gallery {
+	width: 100%;
+	height: 930px;
+	padding-top: 100px;
+}
+#main_services {
+	padding-top: 100px;
+	width: 100%;
+	min-height: 400px;
+}
+
+div.full {
+	float: left;
+	width: 100%;
+}
+
+div.gallery {
+	text-align: center;
+	border: 1px solid white;
+	float: left;
+	width: 49.5%;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 50%;
+	height: 100px;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+#domestic_main {
+	height: 900px;
+	margin-top: 120px;
+}
+
+
+#image1{
+	background-image: url('../images/vancouver.jpg');
+	background-size: cover;
+}
+#image1:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/vancouver.jpg');
+	opacity: 0.7; 
+}
+#image2{
+	background-image: url('../images/ottawa.jpg');	
+	background-size: cover;
+}
+
+#image2:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/../images/ottawa.jpg');
+	opacity: 0.7; 
+}
+#image3{
+	background-image: url('../images/toronto.jpg');	
+	background-size: cover;	
+}
+
+#image3:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/toronto.jpg');
+	opacity: 0.7; 
+}
+#image4{
+	background-image: url('../images/quebec.jpeg');
+	background-size: cover;	
+}
+
+#image4:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/quebec.jpeg');
+	opacity: 0.7; 
+}
+#image5{
+	background-image: url('../images/windsor.jpg');	
+	background-size: cover;
+}
+
+#image5:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/windsor.jpg');
+	opacity: 0.7; 
+}
+#image6{
+	background-image: url('../images/london.jpg');	
+	background-size: cover;
+}
+
+#image6:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/london.jpg');
+	opacity: 0.7; 
+}
+#image7{
+	background-image: url('../images/alberta.jpg');	
+	background-size: cover;
+}
+
+#image7:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/alberta.jpg');
+	opacity: 0.7; 
+}
+#image8{
+	background-image: url('../images/winnipeg.jpg');
+	background-size: cover;	
+}
+
+#image8:hover{
+	background-image: linear-gradient(to top right,#8ac48b 10%,transparent ), url('../images/winnipeg.jpg');
+	opacity: 0.7; 
+}
+.p {
+	margin-top: 50%;
+	color: black;
+	text-shadow: 2px 2px white;
+}
+.row {
+	width: 100%;
+	height: 200px;
+}
+.column {
+	margin-left:10px;
+	margin-top: 10px;
+	text-align:center;
+	width: 47%;
+	height: 100%;
+	float: left;
+	border-radius: 100px;
+}
+/*Footer css*/
+	footer{
+		background-color: rgb(138, 196, 139);
+		height: 500px;
+		width: 100%;
+		float: left;
+	}
+	.foot_t1, .foot_t2, .foot_t3_1{
+		float: none;
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	.foot_t1 td{
+		font-size: 1em;
+	}
+	.foot_t2 {
+		text-align: center;
+	}
+	.foot_t3_1{
+		display: block;
+	}
+	.foot_t3_1 td{
+		padding-top: 30px;
+		padding-right: 40px;
+		font-size: 0.9em;
+	}
+	.foot_txt{
+		font-size: 1em;
+		color: white;
+		font-weight: bold;
+	}
+	.foot_txt_1{
+		color: white;
+		font-size: 1em;
+		text-align: left;
+		font-weight: bold;
+	}
+	.copyright_text{
+		width: 100%;
+		padding-top: 3%;
+		text-align: center;
+		font-size: 0.7em;
+		float: left;
+	}
+@media only screen and (min-width: 600px) {
+	.left {
+	float: left;
+	width: 45%;
+	font-family: Lucida Calligraphy;
+	font-size: 20px;
+	padding: 10px;
+	}
+	#domestic_main {
+		height: 600px;
+	}
+	.row {
+		padding-top: 20px;
+		height: 250px;	
+	}
+	.column {
+		margin-left: 30px;
+		width: 22%;
+		height: 230px;
+		border-radius: 200px;
+		text-align: center;
+		cursor: pointer;
+	}
+	.p{
+		height: 50%;
+		padding-top: 25%;
+		font-size: 30px;
+		margin-left: 0%;
+		margin-top:10%;
+	}
+	ul#topnav {
+		background: none;
+	}
+	button {
+		display: none;
+	}
+	#navigation {
+		position: static;
+	}
+	#navigation ul {
+		display: block;
+	}
+	ul#topnav li,
+	ul#topnav li.right {
+		float: left;
+	}
+	.service_content {
+		width: 25%;
+		height: 300px;
+		float: left;
+		text-align: center;
+	}
+	div.gallery {
+		padding-left: 3px;
+		float: left;
+		width: 24.5%;
+	}
+	#main_gallery {
+		height: 450px;
+	}
+	footer{
+		margin-top: 100px;
+		background-color: rgb(138, 196, 139);
+		height: 400px;
+	}
+	.foot{
+		width: 100%;
+	}
+	.foot_t1 {
+		width: 20%;
+	}
+	.foot_t2 {
+		width: 20%;
+	}
+	.foot_t3_1{
+		width: 25%;
+	}
+	.foot_t1, .foot_t2, .foot_t3_1{
+		float: left;
+		margin-left: 7%;
+	}
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="goHappy" content="goHappy, tourism, travel">
+        <title> goHappy | Sign In</title>
+        <link href="css/normalize.css" rel= "stylesheet">
+        <link href="images/gohappy-logo.png" rel="shortcut icon"> 
+        <link href="css/style_signin.css" rel="stylesheet" > 
+        <script type="text/javascript">
+            function toggleMenu(){
+                document.getElementById("topnav").style.display = "block";
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Header & nav -->
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="images/logo.png" width="100px" height="40px" />
+                </div>
+                <button onClick="toggleMenu()">
+                    <img src="images/menu.png" height="30px" width="30px" />
+                </button>
+                <div id="navigation">
+                    <ul id="topnav">
+                        <li><a href="DashBord.html">Home</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="DomesticTrips.html">Domestic Trips</a></li>
+                        <li><a href="DomesticTrips.html">International Trips</a></li>
+                        <li><a href="#">Testimonials</a></li>               
+                        <li><a href="SignIn.html">Log-In</a></li>
+                        <li><a href="JoinUs.html">Sign-Up</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <main>
+            <div></div>
+            <div>
+                <form method="post" id="myForm" action="javascript:void(0)">
+                    <!--Label tags used for screen reader but hidden to preserve design -->
+                    <h1>Sign In</h1>
+                    <div>
+                        <label for="Email">Email Address</label><input type="email" name="email"  id="Email" value="" placeholder="Enter e-mail" size="60" required /><span id="errEmail"></span>
+                    </div>                     
+                    <div>
+                        <label for="Password">Password</label><input type="password" name="password" id="Password" value="" placeholder="Password" size="60" required /><span id="errPWD"></span>
+                    </div>
+                    <span id="errorLogin"></span>
+                    <div>
+                        <label for="Checkbox">Check box</label><input type="checkbox" name="remenberpassword" value="remember" id="Checkbox" size="47" /> Remember me 
+                    </div>
+                    <div>
+                        <label for="buttonSingnIn">button sign in</label><input type="submit" value="Sign In" id="buttonSingnIn" onClick= "validate()"/>
+                       <a href="ForgotPassword.html" title="forgot password" class="linkmain" id="forgotpwwrd" >Forgot Password?</a>
+                    </div> 
+                </form>	
+            </div>
+            <div>
+                <h1>New user?</h1>
+                    <div id="alingjoin">
+                        <a href="JoinUs.html" title="Join Us" class="linkmain">Join goHappy now!</a>
+                    </div>
+                    <div>
+                        <h2>Join Us to:</h2>
+                            <ul id="tlist"></ul>
+                    </div>
+            </div>
+           <div></div>
+        </main>
+        <!--Footer -->
+            <footer>
+         <div class="foot">
+           <table  class="foot_t1">
+             <caption class="foot_txt">BUSINESS HOURS :</caption>
+                     <tr>
+                        <td>Monday-Friday</td>
+                        <td>:</td>
+                        <td>10AM to 7PM</td>
+                     </tr>
+                     <tr>
+                        <td>Saturday</td>
+                        <td>:</td>
+                        <td>10AM to 5PM</td>
+                     </tr>
+                     <tr>
+                        <td>Sunday</td>
+                        <td>:</td>
+                        <td>Closed</td>
+                     </tr>
+         </table>
+          <table  class="foot_t2">
+             <caption class="foot_txt">GET CONNECTED WITH US :</caption>
+                     <tr>
+                        <td><img src = "images/social_icons/whatsapp.png" alt="whatsapp icon" height="40" width="40">
+                           <img src = "images/social_icons/facebook.png" alt="facebook icon" height="40" width="40"></td>
+                     </tr>
+         </table>
+         <table  class="foot_t3_1">
+             <caption class="foot_txt_1"><center>POPULAR ITEMS :</center></caption>
+             <tr>
+               <td><img src = "images/popular_items/1.jpg" alt="popular visiting place...." height="50" width="70"></td>
+               <td><img src = "images/popular_items/2.jpg" alt="popular visiting place...." height="50" width="60"></td>
+               <td><img src = "images/popular_items/3.jpg" alt="popular visiting place...." height="50" width="60"></td>
+               <td><img src = "images/popular_items/4.jpg" alt="popular visiting place...." height="50" width="60"></td>
+             </tr>
+             <tr>
+               <td><img src = "images/popular_items/5.jpg" alt="popular visiting place...." height="50" width="70"></td>
+               <td><img src = "images/popular_items/6.jpg" alt="popular visiting place...." height="50" width="60"></td>
+               <td><img src = "images/popular_items/7.jpg" alt="popular visiting place...." height="50" width="60"></td>
+               <td><img src = "images/popular_items/8.jpg" alt="popular visiting place...." height="50" width="60"></td>
+             </tr>
+         </table>
+      </div>
+        <div class="copyright_text">
+            Copyright &copy; 2018 GoHappy Overseas<br>
+            <a href="mailto:info@gohappyoverseas.com"><b>info@gohappyoverseas.com</b></a>
+        </div>         
+      </footer>
+        <script src="script/menu.js" rel="script"></script> 
+        <script src="script/resizeText.js" rel="script"></script>
+        <script src="script/ArrayListJoinUs.js" rel="script"></script>
+        <script src="script/formValidation.js" rel="script"></script>
+    </body>
+</html>

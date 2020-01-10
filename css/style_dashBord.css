@@ -1,0 +1,497 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+/* Basic 
+----------------------------------*/
+
+body {
+  -ms-overflow-style: scrollbar;   
+  background-color: whitesmoke;
+}
+nav {
+    padding-top: 25px;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(138, 196, 139, .7);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+#logo {
+    width: 10%;
+    float: left;
+}
+#navigation {
+    text-align: right;
+    width: 90%;
+    float: right;
+}
+
+#navigation ul li:hover {
+    background-color: black;
+}
+
+
+
+ul#topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+ul#topnav {
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+        background: none;
+    }
+    button {
+        display: none;
+    }
+    #navigation {
+        position: static;
+    }
+    #navigation ul {
+        display: block;
+    }
+    ul#topnav li,
+    ul#topnav li.right {
+        float: left;
+    }
+section,main, footer {
+    display: grid;
+    width: 100%;
+}
+
+/*header and nav
+----------------------------------*/
+
+.assessibility{
+    height: 2em; 
+    padding-top: 2em;
+    border:0;
+    margin: 0; 
+}
+#plustext{
+    font-size: 1.5em;
+}
+#minustext{
+    font-size: 1em;
+}
+.Aa {
+    align-self: flex-end;
+    text-align: right;
+}
+
+/*Menu
+    ---------------------*/
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    right: 0;
+    background-color:#070034;
+    overflow-x: hidden;
+    transition: 0.9s;
+    padding-top: 60px;
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    right: 0;
+    background-color:#070034;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #070034;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color:#444;
+}
+
+ul {     
+    font: inherit;
+    font-size: 1em;
+    color: #444444;
+    }
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 30px;
+  }
+
+.linkmain{
+    text-decoration: none;
+    color: #b6001c; 
+    padding: 0;
+}
+.linkmain:hover{
+    color:#444;
+}
+#alingjoin{
+    text-align: center;
+}
+#forgotpwwrd{
+    text-align: right;
+    padding-left: 45%;
+}
+
+header .logo{
+    background: #6fb794;
+}
+
+/*main dashboard
+-------------------------------------*/
+
+main{
+    background-image: url("../images/toronto.jpg");
+    height: 2100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.mainWelcome{
+    padding-top: 70px;
+}
+.mainWelcome a {
+    font-size: 0.5em;
+    color: white;
+    text-align: center; 
+}
+
+.mainWelcome a:link {color: palevioletred;}
+.mainWelcome a:visited {color:palevioletred;}
+.mainWelcome a:hover {color:white;}
+
+.mainSection{
+    background-color: white;
+    height: 100px;
+}
+.package {
+    height: 700px;
+    display: grid;
+    grid-template: 80% / repeat(3, 30%);
+    align-content: center;
+    justify-content: space-evenly; 
+    background-color: whitesmoke;
+}
+.package a{
+    font-size: 1em;
+    padding-left: 10%; 
+}
+
+.package a:link {color: orangered;}
+.package a:visited {color:dimgray;}
+.package a:hover {color:#444444;}
+
+#packageMsn{
+    height: 110px;
+    background-color: whitesmoke;
+    align-self: flex-end; 
+    padding: 0% 10% 0% 10%;
+}
+#packageMsn p{
+    font: inherit;
+    font-size: 1.5em;
+    color: #444444;
+    text-align: center;
+}
+.package div{   
+    background-color: white;
+    height:100%;
+}
+.mainHeader{
+    height: 40%;
+} 
+.pFont{
+    font: inherit;
+    font-size: 1em;
+    color: #444444;
+    text-align: justify;
+    padding: 25% 10% 0% 10%;    
+}
+.destiny{
+    height: 100%;
+    width: 80%;
+    padding: 5% 10%;
+}
+
+#services {
+    background-color: #4fb498;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(79,180,152), rgba(206, 27, 40, 0.25)), url(../images/plan.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    align-content: center;
+  }
+.servicesImg img{
+    width: 3em; 
+    color: whitesmoke;
+}
+.divBorder{
+    border-radius: 50% 50% 50% 50%;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-color: #fecb02;
+}
+.myIcone{
+    display: grid;
+    grid-template: 100% / repeat(4, 10%);
+    align-content: center;
+    justify-content: space-evenly; 
+}
+.divBorder:hover{ 
+    border-style:solid;
+}
+.align_choose_text {
+    align-content: center;
+    font-size: 1.2em;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 5%;
+}
+.align_icons{
+    padding-top: 15%;
+    padding-left: 20%;
+
+}
+
+/*typhografy
+---------------------------------------*/
+h1{
+  font: inherit;
+  font-size: 2em;
+  color: #444444;
+}
+h2{
+  font: inherit;
+  font-size: 1.5em;
+  color: #444444;
+  text-align: center;    
+}
+h3{
+  font: inherit;
+  font-size: 3em;
+  color: white;
+  text-align: center; 
+}
+
+/*footer
+---------------------------------------*/
+    footer{
+        background-color: rgb(138, 196, 139);
+        height: 500px;
+        width: 100%;
+        float: left;
+    }
+    .foot_t1, .foot_t2 {
+        float: left;
+        width: 20%;
+        margin-top: 20px;
+        margin-left: 3%;
+    }
+    .foot_t3_1 {
+        float: left;
+        width: 50%;
+        margin-left: 3%; 
+    }
+    
+    .foot_t1 td{
+        font-size: 1em;
+    }
+    .foot_t2 {
+        text-align: center;
+    }
+    .foot_t3_1{
+        display: block;
+    }
+    .foot_t3_1 td{
+        padding-top: 30px;
+        padding-right: 40px;
+        font-size: 0.9em;
+    }
+    .foot_txt{
+        font-size: 1em;
+        color: white;
+        font-weight: bold;
+    }
+    .foot_txt_1{
+        color: white;
+        font-size: 1em;
+        text-align: left;
+        font-weight: bold;
+    }
+    .copyright_text{
+        width: 100%;
+        padding-top: 3%;
+        text-align: center;
+        font-size: 0.7em;
+        float: left;
+    }
+/* Responsive
+-------------------------------------------*/
+
+@media only screen and (max-width: 960px){
+    
+    #forgotpwwrd{
+        padding-left: 40%;
+    }
+}
+
+/*mobile landscape layout*/
+@media only screen and (max-width: 767px){
+
+    /*Main
+    -----------------------------*/
+    .package {
+        display: grid;
+        grid-template: 80% / repeat(3, 31%);    
+    }
+    .mainHeader{
+        height: 20%;
+    }
+    .pFont{
+    padding: 40% 10% 0% 10%;    
+    }
+    /*footer
+    ---------------*/
+    .allfooter{
+        height: auto; 
+        grid-template-columns: none;
+    }
+}
+
+/*mobile portrait layout*/
+@media only screen and (max-width: 480px){
+
+
+    #logo {
+        width: 10%;
+        float: left;
+    }
+
+
+    ul#topnav li {
+        float: none;
+    }
+
+
+    ul#topnav li.right {
+        float: none;
+    }
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        float: right;
+        display: block;
+    }
+
+    #navigation ul {
+        display: none;
+    }
+    ul#topnav {
+       
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+  /*main
+    ---------------*/
+    main{
+        height: 5000px;
+        width: 400px;
+    } 
+    h3{
+      font-size: 1.5em;
+    }
+    .mainWelcome{
+        padding-top: 70px;
+        padding-left: 5px;
+        padding-bottom: 0;
+        border: 0;
+    }
+    #packageMsn{
+        padding: 5% 10% 170% 10%;
+        height: 5%;
+    }
+    .mainWelcome a {
+        font-size: 0.9em;
+        color: white;
+        text-align: center; 
+    }
+   .package {
+        grid-template-columns: none;
+    }
+     .mainHeader{
+        height: 40%;
+        width: 100%;
+    }
+
+    .pFont{
+        padding: 20% 10% 0% 10%;    
+    }
+    
+    #services {
+        height: 700px;
+    }
+    .myIcone{
+        grid-template: 80% / repeat(1, 10%);
+        height: 187px;
+        width: 250px;
+    }   
+    
+     /*footer
+    ---------------*/
+    
+    .foot_t1, .foot_t2, .foot_t3_1{
+        float: none;
+        width: 100%;
+        /*margin-left: 0;*/
+    }
+}

@@ -1,0 +1,511 @@
+/*Main body css*/
+html,body{
+	background-color:white;
+	margin: 0;
+	font-family: open-sans sans-serif;
+}
+
+/*Give Parralax or Floating image view to background image on whole page*/
+.parallax{
+
+    /* The image used */
+    background-image: url("../images/background/back.jpeg");
+
+    /* Set a specific height */
+    height: 1300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Header | Nav bar css*/
+nav {
+	padding-top: 25px;
+	width: 100%;
+	height: 75px;
+	background-color: rgba(138, 196, 139, .7);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+#logo {
+	width: 10%;
+	float: left;
+}
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	float: right;
+}
+button {
+	display: none;
+}
+#navigation {
+	width: 90%;
+	float: right;
+}
+#navigation ul li:hover {
+	background-color: black;
+}
+#navigation {
+	position: static;
+}
+#navigation ul {
+	display: block;
+}
+ul#topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+ul#topnav {
+	background: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul#topnav li,
+ul#topnav li.right {
+	float: left;
+}
+
+/*Main section css*/
+.details{
+	background-color: white;
+	padding-bottom: 50px;
+	padding-top: 100px;
+}
+.div1{
+	margin: 0 50px 0 200px;
+	padding-top: 50px;
+  	float: left;
+}
+.head1{
+	margin-top: 25px;
+}
+.para1{
+	width: 350px;
+	color: #99999b;
+	line-height: 25px;
+}
+.div2{
+	font-size: 1.5em;
+	padding-top: 50px;
+}
+.div2_1{
+	display: none;
+}
+.tab1 td{
+	padding-right: 10px;
+}
+.num_invert{
+
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	float: left;
+	font-size: 3em;
+
+	font-family: Garamond;
+	font-weight: bold;
+	color: #FCB941;
+}	
+.pad_service{
+	padding: 10px;
+}
+.service_style{
+	width: 250px;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+.div3{
+	text-align: center;
+	height: 500px;
+	color: white;
+}
+.choose_div{
+	font-size: 3em;
+	font-family: "Merienda One", cursive;
+	margin-top: 50px;
+}
+.choose_img{
+	background: #fcb941;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+.services{
+	padding-left: 240px;
+}
+.align_icons{
+	float: left;
+	width: 300px;
+	margin-right: 70px;
+	margin-top: 150px;
+}
+.align_choose_text{
+	float: left;
+	width: 300px;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 230px;
+	line-height: 1.5;
+	margin-left: -370px;
+}
+
+/*Footer css*/
+footer{
+	position: absolute;
+	height: 300px;
+	width: 100%;
+    background-color: #8ac48b;
+}
+.foot_txt{
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.foot_t1{
+	margin-left: 200px;
+	float: left;
+	margin-top: 30px;
+	margin-right: 100px;
+}
+.foot_t1 td{
+	font-size: 1.1em;
+	color: #555555;
+	padding-right: 10px;
+	padding-top: 30px;	
+}
+.foot_t2{
+	float: left;
+	width: 350px;
+	margin-top: 30px;
+	margin-right: 100px;
+}
+.foot_t2 img{
+	padding-top: 30px;
+	padding-left: 80px;
+}
+.foot_t3{
+	width: 350px;
+	margin-top: 30px;
+	float: left;
+}
+.foot_t3 td{
+	padding-top: 30px;
+}
+.foot_t3_1{
+	display: none;
+}
+.copyright_text{
+	position: absolute;
+	text-align: center;
+	font-style: italic;
+	width: 100%;
+	bottom: 0;
+}
+.copyright_text a{
+	text-decoration: none;
+}
+
+/*Responsive CSS 1280 pixel Landscape View*/
+@media only screen and (max-width: 1280px) {
+
+	/*Header | Nav bar css*/
+
+	/*Main section css*/
+	.div1{
+		margin: 0 30px 0 90px;
+	}
+	.services{
+		padding-left: 220px;
+	}
+	.align_icons{
+		width: 240px;
+		margin-right: 60px;
+	}
+	.align_choose_text{
+		width: 280px;
+		margin-left: -340px;
+	}
+
+	/*Footer css*/
+	footer{
+		height: 325px;
+	}
+	.foot_t1, .foot_t2, .foot_t3{
+		width: 275px;
+		margin-top: 30px;
+		margin-left: 90px;
+		padding-bottom: 30px;
+		margin-right: 60px	;
+	}
+	.foot_t2 img{
+		padding-left: 60px;
+	}
+}	
+
+/*Responsive CSS Tablet mode Landscape View*/
+@media only screen and (max-width: 1024px) {
+
+	/*Header | Nav bar css*/
+
+	/*Main section css*/
+	.div1{
+		margin: 0 30px 0 30px;
+	}
+	.services{
+		padding-left: 10px;
+	}
+	.services{
+	padding-left: 120px;
+	}
+	.align_icons{
+		width: 240px;
+		margin-right: 60px;
+	}
+	.align_choose_text{
+		width: 280px;
+		margin-left: -340px;
+	}
+
+	/*Footer css*/
+	footer{
+		height: 325px;
+	}
+	.foot_t1, .foot_t2, .foot_t3{
+		width: 275px;
+		margin-top: 30px;
+		margin-left: 30px;
+		padding-bottom: 30px;
+		margin-right: 30px;
+	}
+	.foot_t2 img{
+		padding-left: 60px;
+	}
+}	
+
+/*Responsive CSS Tablet mode Portrait View*/
+@media only screen and (max-width: 812px){
+	.parallax{
+		height: 1500px;
+	}
+
+	/*Header | Nav bar css*/
+
+	/*Main section css*/
+	.div1{
+		margin: 0 30px 0 30px;
+	}
+	.para1{
+		width: 100%;
+	}
+	.div2{
+		font-size: 1.4em;
+	}
+	.choose_div{
+		font-size: 2.5em;
+	}
+	.services{
+		padding-left: 165px;
+	}
+	.align_icons{
+		width: 70px;
+		margin-right: 130px;
+		margin-top: 150px;
+	}
+	.align_icons img{
+		width: 45px;
+		height: 45px;
+	}
+	.align_choose_text{
+		font-size: 1.1em;
+		width: 200px;
+		margin-left: -265px;
+	}
+
+	/*Footer css*/
+	footer{
+		height: 800px;
+	}
+	.foot_t1, .foot_t2, .foot_t3{
+		width: 100%;
+		margin-top: 50px;
+		margin-left: 50px;
+		padding-bottom: 30px;
+	}
+	.foot_txt{
+		text-align: left;
+	}
+}	
+
+/*Responsive CSS Phone mode Landscape View*/
+@media only screen and (max-width: 740px){
+	.parallax{
+		height: 1500px;
+	}
+
+	/*Header | Nav bar css*/
+
+	/*Main section css*/
+	.div1{
+		margin: 0 30px 0 30px;
+	}
+	.para1{
+		width: 100%;
+	}
+	.div2{
+		font-size: 1.4em;
+	}
+	.choose_div{
+		font-size: 2.5em;
+	}
+	.services{
+		padding-left: 125px;
+	}
+	.align_icons{
+		width: 70px;
+		margin-right: 110px;
+		margin-top: 150px;
+	}
+	.align_icons img{
+		width: 45px;
+		height: 45px;
+	}
+	.align_choose_text{
+		font-size: 1.1em;
+		width: 155px;
+		margin-left: -225px;
+	}
+
+	/*Footer css*/
+	footer{
+		height: 800px;
+	}
+	.foot_t1, .foot_t2, .foot_t3{
+		width: 100%;
+		margin-top: 50px;
+		margin-left: 50px;
+		padding-bottom: 30px;
+	}
+	.foot_txt{
+		text-align: left;
+	}
+}	
+
+/*Responsive CSS Phone mode*/
+@media only screen and (max-width: 600px) {
+	.parallax{
+		height: 2000px;
+	}
+
+	/*Header | Nav bar css*/
+	button{
+		display: block;
+	}
+	#navigation ul {
+		display: none;
+	}
+	ul#topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	ul#topnav li {
+		float: none;
+	}
+	ul#topnav li.right {
+		float: none;
+	}
+
+	/*Main section css*/
+	.div1{
+		margin: 0 30px 0 30px;
+	}
+	.para1{
+		width: 100%;
+	}
+	.div2{
+		display: none;
+	}
+	.div2_1{
+		display: block;	
+		font-size: 1.2em;
+		padding-top: 30px;
+	}
+	.div3{
+		height: 800px;
+	}
+	.choose_div{
+		font-size: 2em;
+	}
+	.services{
+		padding-left: 150px;
+	}
+	.align_icons img{
+		width: 40px;
+		height: 40px;
+	}
+
+	/*Footer css*/
+	footer{
+		height: 1000px;
+	}
+	.foot_t1, .foot_t2, .foot_t3_1{
+		float: none;
+		width: 230px;
+		margin-left: 90px;
+		margin-top: 50px;
+	}
+	.foot_t1 td{
+		padding-right: 30px;
+		font-size: 1em;
+	}
+	.foot_t2 img{
+		padding-right: 60px;
+		padding-left: 0px;
+	}
+	.foot_t3{
+		display: none;
+	}
+	.foot_t3_1{
+		display: block;
+	}
+	.foot_t3_1 td{
+		padding-top: 30px;
+		padding-right: 40px;
+		font-size: 0.9em;
+	}
+	.foot_txt{
+		font-size: 1em;
+	}
+	.foot_txt_1{
+		color: white;
+		font-size: 1em;
+		text-align: left;
+		font-weight: bold;
+	}
+	.copyright_text{
+		font-size: 0.7em;
+	}
+
+}
